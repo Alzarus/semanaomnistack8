@@ -6,3 +6,6 @@ Database table access{
   user: omnistack,
   pass: omnistack
 }
+
+RUN COMMAND:
+yarn dev
