@@ -8,11 +8,11 @@ module.exports = {
         const loggedDev = await Dev.findById(user);
         const targetDev = await Dev.findById(devId);
 
-        if (!targetDev){
-            return res.status(400).json({error: 'Dev not exists'});
+        if (!targetDev) {
+            return res.status(400).json({ error: 'Dev not exists' });
         }
 
-        if(targetDev.likes.includes(user)){
+        if (targetDev.likes.includes(user)) {
             console.log('DEU MATCH');
         }
 
